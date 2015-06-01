@@ -1,0 +1,32 @@
+<ion-view title="Home">
+    <ion-content class="padding">
+        
+
+
+        <label class="item item-input">
+            <span class="input-label">District</span>
+            <select ng-model="employee.DistrictId"
+                    ng-options="d.Id as d.Name for d in districts"></select>
+        </label>
+
+        <label class="item item-input">
+            <span class="input-label">First Name</span>
+            <input ng-model="employee.FirstName" type="text">
+        </label>
+        
+        <label class="item item-input">
+            <span class="input-label">Last Name</span>
+            <input ng-model="employee.LastName" type="text">
+        </label>
+
+        <label class="item item-input">
+            <span class="input-label">Join Date</span>
+            <input ng-model="employee.JoiningDate" type="date">
+        </label>
+
+        <button class="button button-full button-positive" ng-click="save()">
+            Save
+        </button>
+
+    </ion-content>
+</ion-view>
